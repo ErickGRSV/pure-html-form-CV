@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ficha de Emprego</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Ficha de Emprego</h1>
+    <form>
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" value="2026-01-01">
+
+            <br>
+
+            <label for="carg">Cargo Pretendido:</label>
+            <input type="text" id="carg" name="carg" placeholder="Eletricista">
+
+            <br>
+
+            <label for="pret">Pretensão Salarial:</label>
+            <input type="text" inputmode="decimal" placeholder="R$ 100,00" id="pret" name="pret">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informações Gerais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Júlia Silva dos Santos">
+            <br>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" name="sexo" id="masc" value="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="femi" value="femi">
+                <label for="femi">Feminino</label>
+            </fieldset>
+            <label for="datad">Data de Nascimento:</label>
+            <input type="date" name="datad" id="datad">
+            <br>
+            <label for="idad">Idade:</label>
+            <input type="number" name="idad" id="idad" placeholder="22" min="0" max="120">
+            <br>
+            <label for="naci">Nacionalidade:</label>
+            <input type="text" name="naci" id="naci" placeholder="Brasileiro">
+            <br>
+            <label for="loca">Local de Nascimento:</label>
+            <input type="text" name="loca" id="loca" placeholder="Minas Gerais">
+            <br>
+            <fieldset>
+                <legend>Localização</legend>
+                <label for="ende">Endereço:</label>
+                <input type="text" name="ende" id="ende" placeholder="Av. Avenida">
+                <br>
+                <label for="nume">Nº:</label>
+                <input type="number" name="nume" id="nume" placeholder="123" min="0">
+                <br>
+                <label for="comp">Complemento:</label>
+                <input type="text" name="comp" id="comp" placeholder="Bloco D">
+                <br>
+                <label for="bair">Bairro:</label>
+                <input type="text" name="bair" id="bair" placeholder="Vila Madalena">
+                <br>
+
+
+                <label for="cida">Cidade:</label>
+                <input type="text" name="cida" id="cida" placeholder="São Paulo">
+                <br>
+                <label for="esta">Estado:</label>
+                <input type="text" name="esta" id="esta" placeholder="SP">
+                <br>
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" placeholder="88888-000">
+            </fieldset>
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="fone">Fone (Residencial):</label>
+                <input type="text" name="fone" id="fone" placeholder="(11) 98765-4321">
+                <br>
+                <label for="fonec">Fone (Celular):</label>
+                <input type="text" name="fonec" id="fonec" placeholder="(11) 98765-4321">
+                <br>
+                <label for="emai">E-mail:</label>
+                <input type="email" name="emai" id="emai" placeholder="exemplo@example.com">
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Familia</legend>
+                <label for="estad">Estado Civil:
+                </label>
+                <select name="estad" id="estad">
+                    <option value="solt">Solteiro(a)</option>
+                    <option value="casa">Casado(a)</option>
+                    <option value="divo">Divorciado(a)</option>
+                    <option value="viuv">Viúvo(a)</option>
+                    <option value="sepa">Separado(a)</option>
+                    <option value="unia">União Estável</option>
+                </select>
+                <br>
+                <label for="nomed"> Nome do Conjuge:
+                </label>
+                <input type="text" name="nomed" id="nomed" placeholder="Pedro Filho">
+                <br>
+                <label for="prof"> Profissão do Conjuge:
+                </label>
+                <input type="text" name="prof" id="prof" placeholder="Maquinista">
+                <fieldset>
+                    <legend>Filhos</legend>
+                    <input type="checkbox" value="true" name="poss" id="poss">
+                    <label for="poss">Possuo filhos</label>
+                    <br>
+                    <label for="quan">Quantidade de filhos:</label>
+                    <input type="number" min="0" max="99" placeholder="3" name="quan" id="quan">
+                    <br>
+                    <label for="idade">Idade dos filhos</label>
+                    <input type="text" id="idade" name="idade" placeholder="1, 2, 3">
+                </fieldset>
+                <label for="nomedo"> Nome do pai:
+                </label>
+                <input type="text" name="nomedo" id="nomedo" placeholder="José Silva">
+                <br>
+                <label for="profi"> Profissão do pai:
+                </label>
+                <input type="text" name="profi" id="profi" placeholder="Pedreiro">
+                <br>
+                <label for="nomeda"> Nome da mãe:
+                </label>
+                <input type="text" name="nomeda" id="nomeda" placeholder="Maria Silva">
+                <br>
+                <label for="profis"> Profissão da mãe:
+                </label>
+                <input type="text" name="profis" id="profis" placeholder="Cozinheira">
+                <br>
+                <input type="checkbox" value="true" name="possu" id="possu">
+                <label for="possu">Possuo parentes na empresa</label>
+                <br>
+                <label for="nomedop"> Nome do parente:
+                </label>
+                <input type="text" name="nomedop" id="nomedop" placeholder="José Pessoa">
+                <br>
+                <label for="cargo"> Cargo do parente:
+                </label>
+                <input type="text" name="cargo" id="cargo" placeholder="Marinheiro(a)">
+                <br>
+                <label>
+                    Grau de parentesco: 
+                    <input type="number" placeholder="1" name="grau" id="grau" min="1" max="9">
+                    ºgrau
+                </label>
+            </fieldset>
+            <input type="checkbox" value="true" name="jatr" id="jatr">
+            <label for="jatr">Já trabalhei na empresa</label>
+            <br>
+            <input type="checkbox" value="true" name="possuo" id="possuo">
+            <label for="possuo">Possuo indicação de algum funcionário</label>
+            <br>
+            <label for="quem">Quem?</label>
+            <input type="text" name="quem" id="quem" placeholder="Mário Gomes">
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
